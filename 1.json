@@ -1,0 +1,25 @@
+{
+    "val": 6,
+    "left": {
+        "val": 4,
+        "left": {
+            "val": 5,
+            "left": null,
+            "right": null,
+            "next": null,
+            "parent": null
+        },
+        "right": null,
+        "next": null,
+        "parent": null
+    },
+    "right": {
+        "val": 3,
+        "left": null,
+        "right": null,
+        "next": null,
+        "parent": null
+    },
+    "next": null,
+    "parent": null
+}
