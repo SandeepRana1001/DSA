@@ -101,7 +101,7 @@ const anagram = require('./anagram/index')
 // anagram.execute()
 
 const smallest_positive_integer = require('./smallest_positive_integer/index')
-// smallest_positive_integer.execute()
+smallest_positive_integer.execute()
 
 const rotate_matrix = require('./rotate_matrix/index')
 // rotate_matrix.execute()
@@ -109,4 +109,27 @@ const rotate_matrix = require('./rotate_matrix/index')
 const spiral_matrix = require('./spiral_matrix/generate_from_array')
 const spiral_matrix_new = require('./spiral_matrix/create_fresh')
 // spiral_matrix.execute()
-spiral_matrix_new.execute()
+// spiral_matrix_new.execute()
+
+const zero_matrix = require('./zero_matrix/index')
+// zero_matrix.execute()
+
+const stocks_profit = require('./stocks_profit/index')
+// stocks_profit.execute()
+
+const stock_profit_greedy_approach = require('./stocks_profit/greedy_approach')
+// stock_profit_greedy_approach.execute()
+
+
+const pair_with_given_sum = require('./two_pointers/pair_with_given_sum')
+
+// pair_with_given_sum.execute()
+
+const merge_sorted_array = require('./two_pointers/merge_sorted_array')
+// merge_sorted_array.execute()
+
+const triplets = require('./two_pointers/triplets')
+// triplets.execute()
+
+const removeDuplicates = require('./two_pointers/removeDuplicates')
+removeDuplicates.execute()
