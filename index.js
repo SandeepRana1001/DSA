@@ -132,4 +132,10 @@ const triplets = require('./two_pointers/triplets')
 // triplets.execute()
 
 const removeDuplicates = require('./two_pointers/removeDuplicates')
-removeDuplicates.execute()
+// removeDuplicates.execute()
+
+const pair_matches_sum_unorder = require('./two_pointers/pair_matches_sum_unorder')
+// pair_matches_sum_unorder.execute()
+
+const container_holds_most_water = require('./two_pointers/container_holds_most_water')
+container_holds_most_water.execute()

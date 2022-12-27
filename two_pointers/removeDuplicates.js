@@ -1,22 +1,20 @@
 const execute = () => {
 
-    const nums = [2, 2, 2, 3, 4, 4, 9], n = 7
-    let i = 0, j = 0, count = 1
+    let nums = [2, 2, 2, 3, 4, 4, 9], n = 7
+    let i = 0
 
-    for (let i = 0; i < n - 1; i++) {
+    for (let val of nums) {
 
-        if (nums[i] === nums[i + 1]) {
-            count += 1
-        } else {
-            count = 1
-        }
-        if (count > 2) {
-            nums.splice(i + 1, 1)
+        if (i === 0 || i === 1 || nums[i - 2] !== val) {
+            nums[i] = val
+            i++
         }
     }
+
+
     var res = {
-        newLength: nums.length,
-        newArray: nums
+        newLength: i,
+        newArray: nums.splice(0, i)
     }
     console.log(res)
 }
