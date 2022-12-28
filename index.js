@@ -138,4 +138,22 @@ const pair_matches_sum_unorder = require('./two_pointers/pair_matches_sum_unorde
 // pair_matches_sum_unorder.execute()
 
 const container_holds_most_water = require('./two_pointers/container_holds_most_water')
-container_holds_most_water.execute()
+// container_holds_most_water.execute()
+
+
+const overlapping_intervals = require('./two_pointers/overlapping_intervals')
+// overlapping_intervals.execute()
+
+const overlapping_meeting = require('./two_pointers/overlapping_meeting')
+// overlapping_meeting.execute()
+
+const equal_partition_index = require('./Array Prefix Sum/Equal_Partition_index')
+// console.log(equal_partition_index.execute())
+
+const largest_sum_contiguous = require('./Array Prefix Sum/largest_sum_contiguous')
+
+// console.log(largest_sum_contiguous.execute())
+
+const check_if_present_subarray_with_sum_zero = require('./Array Prefix Sum/check_if_present_subarray_with_sum_zero')
+
+// console.log(check_if_present_subarray_with_sum_zero.execute())
