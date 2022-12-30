@@ -1,34 +1,43 @@
 const execute = () => {
 
-    const str = '2 3 1 -4 0 6'
+    const str = '0 0 0 0 0 0 0'.trim()
+    // const str = '2 3 1 -4 0 6'
     // const str = '-1000000000 -1000000000'
     const arr = str.split(' ').map((element) => parseInt(element))
     let n = arr.length
-    const sum = 0
-
-    let curr_sum = arr[0], start = 0, i, end = 0
 
 
-    // create prefix array
+    console.log(str)
 
-    for (i = 1; i <= n - 1; i++) {
+    let sum = 0, len = 0, start = 0, end = 0
+    const map = new Map();
+    map.set(0, -1)
 
-        while (curr_sum > sum && start < i - 1) {
-            curr_sum = curr_sum - arr[start]
-            start++
+
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i]
+
+        if (!map.has(sum))
+            map.set(sum, i)
+
+        else {
+            let newLen = i - map.get(sum)
+
+            if (len <= newLen) {
+                len = newLen
+                start = map.get(sum) + 1
+                end = i
+            }
         }
 
-        if (curr_sum === sum) {
-            end = i - 1
-        }
-
-        if (i < n) {
-            curr_sum = curr_sum + arr[i]
-        }
     }
-    console.log(start)
-    console.log(end)
-    // return arr.splice(start, end)
+
+    if (len === 0)
+        return [-1]
+    else if (sum === 0)
+        return arr
+
+    return arr.slice(start, end + 1)
 
 }
 
