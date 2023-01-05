@@ -6,9 +6,6 @@ const execute = () => {
     const arr = str.split(' ').map((element) => parseInt(element))
     let n = arr.length
 
-
-    console.log(str)
-
     let sum = 0, len = 0, start = 0, end = 0
     const map = new Map();
     map.set(0, -1)

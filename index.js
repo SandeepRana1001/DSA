@@ -1,4 +1,7 @@
 console.clear()
 
-const longest_subarray_with_sum_zero = require('./Array Prefix Sum/subarray_with_sum_zero')
-console.log(longest_subarray_with_sum_zero.execute())
+const wave_form = require('./sorting/wave_faishon')
+// console.log(wave_form.execute())
+
+const next_greater_number_with_same_digit = require('./sorting/next_greater_number_with_same_digit.js')
+console.log(next_greater_number_with_same_digit.execute())
