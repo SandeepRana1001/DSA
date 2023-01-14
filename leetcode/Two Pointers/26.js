@@ -1,3 +1,8 @@
+/*
+    Remove Duplicates 
+    Two Pointers
+*/
+
 const nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
 const n = nums.length
 let start = 0, end = 1
