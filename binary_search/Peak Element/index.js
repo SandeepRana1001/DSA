@@ -1,0 +1,19 @@
+//peak element
+
+const arr = [1, 2, 3, 1]
+const N = 4
+
+let start = 0, end = N - 1
+
+while (start <= end) {
+    let mid = Math.floor((start + end) / 2)
+
+    if (arr[mid] < arr[mid + 1]) {
+        start = mid + 1
+    } else {
+        end = mid - 1
+    }
+}
+
+
+console.log(start)
