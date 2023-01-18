@@ -1,26 +1,26 @@
-const arr = [4, 5, 6, 9, 10, 2, 3]
-//   0  1  2  3  4   5  6  
-let min = 0
+const arr = [4, 5, 1, 2, 3]
 const n = arr.length
+const target = 3
 
-let start = 0, end = n - 1
+const findPivot = (arr, low, high) => {
 
-// array is not rotated
-if (arr[start] < arr[end]) {
-    console.log('Value is ' + arr[start])
-    return
+    if (high < low)
+        return -1;
+    if (high == low)
+        return low;
+
+    let mid = Math.floor((low + high) / 2); /*low + (high - low)/2;*/
+    if (mid < high && arr[mid] > arr[mid + 1])
+        return mid;
+
+    if (mid > low && arr[mid] < arr[mid - 1])
+        return (mid - 1);
+
+    if (arr[low] >= arr[mid])
+        return findPivot(arr, low, mid - 1);
+
+    return findPivot(arr, mid + 1, high);
 }
 
-while (start <= end) {
-    let mid = Math.floor((start + end) / 2)
 
-    if (arr[mid] > arr[mid + 1]) {
-        start = mid + 1
-    } else {
-        end = mid - 1
-    }
-}
-
-
-console.log(start)
-
+console.log(findPivot(arr, 0, n - 1))
